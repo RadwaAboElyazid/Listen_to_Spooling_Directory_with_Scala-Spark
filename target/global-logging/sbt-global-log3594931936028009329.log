@@ -1,0 +1,84 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(early(addPluginSbtFile="""C:\Users\Windows7\AppData\Local\Temp\idea.sbt"""), None, None)
+[debug] > Exec(addPluginSbtFile="""C:\Users\Windows7\AppData\Local\Temp\idea.sbt""", None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.4.7 (Oracle Corporation Java 1.8.0_112)
+[debug]       Load.loadUnit: plugins took 161.8311ms
+[debug]       Load.loadUnit: defsScala took 0.7065ms
+[debug] [Loading] Scanning directory C:\Users\Windows7\.sbt\1.0\plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\Windows7\.sbt\1.0\plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 27.2158 ms
+[debug]           Load.resolveProject(global-plugins) took 60.2197ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: C:\Users\Windows7\.sbt\1.0\plugins, plugins: List(<none>))) took 117.0537ms
+[debug] [Loading] Done in C:\Users\Windows7\.sbt\1.0\plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 142.1559ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.6376ms
+[debug]     Load.loadUnit(file:/C:/Users/Windows7/.sbt/1.0/plugins/, ...) took 315.7243ms
+[debug]   Load.apply: load took 551.3433ms
+[debug]   Load.apply: resolveProjects took 10.1178ms
+[debug]   Load.apply: finalTransforms took 89.153ms
+[debug]   Load.apply: config.delegates took 7.5513ms
+[debug]   Load.apply: Def.make(settings)... took 2118.5899ms
+[debug]   Load.apply: structureIndex took 106.8588ms
+[debug]   Load.apply: mkStreams took 1.9591ms
+[info] loading global plugins from C:\Users\Windows7\.sbt\1.0\plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[warn] 
+[warn] 	Note: Unresolved dependencies path:
+[error] sbt.librarymanagement.ResolveException: Error downloading org.scala-sbt:sbt:1.4.7
+[error]   Not found
+[error]   Not found
+[error]   download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/scala-sbt/sbt/1.4.7/sbt-1.4.7.pom
+[error]   not found: C:\Users\Windows7\.ivy2\localorg.scala-sbt\sbt\1.4.7\ivys\ivy.xml
+[error]   download error: Caught java.net.UnknownHostException: repo.scala-sbt.org (repo.scala-sbt.org) while downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scala-sbt/sbt/1.4.7/ivys/ivy.xml
+[error]   download error: Caught java.net.UnknownHostException: repo.typesafe.com (repo.typesafe.com) while downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt/1.4.7/ivys/ivy.xml
+[error] 	at lmcoursier.CoursierDependencyResolution.unresolvedWarningOrThrow(CoursierDependencyResolution.scala:258)
+[error] 	at lmcoursier.CoursierDependencyResolution.$anonfun$update$38(CoursierDependencyResolution.scala:227)
+[error] 	at scala.util.Either$LeftProjection.map(Either.scala:573)
+[error] 	at lmcoursier.CoursierDependencyResolution.update(CoursierDependencyResolution.scala:227)
+[error] 	at sbt.librarymanagement.DependencyResolution.update(DependencyResolution.scala:60)
+[error] 	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:53)
+[error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:103)
+[error] 	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:73)
+[error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$20(LibraryManagement.scala:116)
+[error] 	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+[error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11(LibraryManagement.scala:116)
+[error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11$adapted(LibraryManagement.scala:97)
+[error] 	at sbt.util.Tracked$.$anonfun$inputChangedW$1(Tracked.scala:219)
+[error] 	at sbt.internal.LibraryManagement$.cachedUpdate(LibraryManagement.scala:130)
+[error] 	at sbt.Classpaths$.$anonfun$updateTask0$5(Defaults.scala:3486)
+[error] 	at scala.Function1.$anonfun$compose$1(Function1.scala:49)
+[error] 	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)
+[error] 	at sbt.std.Transform$$anon$4.work(Transform.scala:68)
+[error] 	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)
+[error] 	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)
+[error] 	at sbt.Execute.work(Execute.scala:291)
+[error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)
+[error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)
+[error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)
+[error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[error] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+[error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[error] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+[error] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+[error] 	at java.lang.Thread.run(Thread.java:745)
+[error] (update) sbt.librarymanagement.ResolveException: Error downloading org.scala-sbt:sbt:1.4.7
+[error]   Not found
+[error]   Not found
+[error]   download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/scala-sbt/sbt/1.4.7/sbt-1.4.7.pom
+[error]   not found: C:\Users\Windows7\.ivy2\localorg.scala-sbt\sbt\1.4.7\ivys\ivy.xml
+[error]   download error: Caught java.net.UnknownHostException: repo.scala-sbt.org (repo.scala-sbt.org) while downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scala-sbt/sbt/1.4.7/ivys/ivy.xml
+[error]   download error: Caught java.net.UnknownHostException: repo.typesafe.com (repo.typesafe.com) while downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt/1.4.7/ivys/ivy.xml
+[debug] > Exec(loadFailed, None, None)
+[warn] Project loading failed: (r)etry, (q)uit, (l)ast, or (i)gnore? (default: r)
